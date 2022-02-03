@@ -44,10 +44,15 @@ jobs:
             python-version: "3.9"
             toxenv: twine
 
-          - name: Code style checks
-            runs-on: ubuntu-latest
+          - name: Check Python files with black autoformatter
             python-version: "3.9"
-            toxenv: style
+            os: ubuntu-latest
+            toxenv: black
+
+          - name: Check Python files with flake8
+            python-version: "3.9"
+            os: ubuntu-latest
+            toxenv: flake8
 
           - name: Bandit security audit
             runs-on: ubuntu-latest
