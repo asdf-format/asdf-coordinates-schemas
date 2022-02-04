@@ -46,12 +46,12 @@ jobs:
 
           - name: Check Python files with black autoformatter
             python-version: "3.9"
-            os: ubuntu-latest
+            runs-on: ubuntu-latest
             toxenv: black
 
           - name: Check Python files with flake8
             python-version: "3.9"
-            os: ubuntu-latest
+            runs-on: ubuntu-latest
             toxenv: flake8
 
           - name: Bandit security audit
