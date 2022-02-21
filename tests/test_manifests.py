@@ -12,15 +12,11 @@ import yaml
 RESOURCES_ROOT = Path(__file__).absolute().parent.parent / "resources"
 
 
-@pytest.mark.parametrize(
-    "manifest_path", (RESOURCES_ROOT / "manifests").glob("**/*.yaml")
-)
+@pytest.mark.parametrize("manifest_path", (RESOURCES_ROOT / "manifests").glob("**/*.yaml"))
 def test_manifest(manifest_path):
     content = manifest_path.read_bytes()
     manifest = yaml.safe_load(content)
-    schema = asdf.schema.load_schema(
-        "asdf://asdf-format.org/core/schemas/extension_manifest-1.0.0"
-    )
+    schema = asdf.schema.load_schema("asdf://asdf-format.org/core/schemas/extension_manifest-1.0.0")
 
     asdf.schema.validate(manifest, schema=schema)
 

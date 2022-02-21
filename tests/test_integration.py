@@ -11,9 +11,7 @@ import yaml
 RESOURCES_ROOT = Path(__file__).absolute().parent.parent / "resources"
 
 
-@pytest.mark.parametrize(
-    "manifest_path", (RESOURCES_ROOT / "manifests").glob("**/*.yaml")
-)
+@pytest.mark.parametrize("manifest_path", (RESOURCES_ROOT / "manifests").glob("**/*.yaml"))
 def test_manifest_integration(manifest_path):
     content = manifest_path.read_bytes()
     manifest = yaml.safe_load(content)

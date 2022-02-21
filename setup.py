@@ -11,6 +11,7 @@ package_dir = {
     "asdf_coordinates_schemas.resources": "resources",
 }
 
+
 def package_yaml_files(directory):
     paths = sorted(Path(directory).rglob("*.yaml"))
     return [str(p.relative_to(directory)) for p in paths]
