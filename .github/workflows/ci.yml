@@ -58,7 +58,7 @@ jobs:
             runs-on: ubuntu-latest
             python-version: "3.9"
             toxenv: bandit
-            
+
           - name: macOS
             runs-on: macos-latest
             python-version: 3.8

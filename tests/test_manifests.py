@@ -8,7 +8,6 @@ import asdf
 import pytest
 import yaml
 
-
 RESOURCES_ROOT = Path(__file__).absolute().parent.parent / "resources"
 
 
