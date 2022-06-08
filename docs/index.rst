@@ -28,6 +28,10 @@ The following are listings of all the schemas provided by this package for ASDF.
 .. toctree::
   :maxdepth: 1
 
+  coordinates.rst
+  frames.rst
+  legacy.rst
+
 
 Developer Resources
 ===================
