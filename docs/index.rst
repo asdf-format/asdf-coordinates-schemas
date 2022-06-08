@@ -31,6 +31,7 @@ The following are listings of all the schemas provided by this package for ASDF.
   coordinates.rst
   frames.rst
   legacy.rst
+  manifests.rst
 
 
 Developer Resources
