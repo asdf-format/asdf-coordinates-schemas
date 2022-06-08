@@ -35,6 +35,7 @@ Developer Resources
 .. toctree::
   :maxdepth: 1
 
+  contributing.rst
   changes.rst
 
 Index
