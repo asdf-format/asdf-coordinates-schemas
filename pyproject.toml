@@ -34,6 +34,7 @@ docs = [
 ]
 test = [
     'pytest',
+    'asdf-astropy >= 0.2.0'
 ]
 
 [project.urls]
