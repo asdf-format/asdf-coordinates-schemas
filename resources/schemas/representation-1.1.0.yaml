@@ -1,7 +1,7 @@
 %YAML 1.1
 ---
 $schema: "http://stsci.edu/schemas/yaml-schema/draft-01"
-id: "http://astropy.org/schemas/astropy/coordinates/representation-1.0.0"
+id: "http://astropy.org/schemas/astropy/coordinates/representation-1.1.0"
 
 title: |
   Representation of points or differentials in two or three dimensional space.
@@ -13,7 +13,7 @@ examples:
   -
     - A SphericalRepresentation
     - |
-        !<tag:astropy.org:astropy/coordinates/representation-1.0.0>
+        !<tag:astropy.org:astropy/coordinates/representation-1.1.0>
           components:
             distance: !unit/quantity-1.1.0 {unit: !unit/unit-1.0.0 AU, value: 1.0}
             lat: !<tag:astropy.org:astropy/coordinates/latitude-1.0.0> {unit: !unit/unit-1.0.0 deg,
@@ -27,7 +27,7 @@ examples:
   -
     - A CartesianDifferential
     - |
-        !<tag:astropy.org:astropy/coordinates/representation-1.0.0>
+        !<tag:astropy.org:astropy/coordinates/representation-1.1.0>
           components:
             d_x: !unit/quantity-1.1.0 {unit: !unit/unit-1.0.0 km s-1, value: 100.0}
             d_y: !unit/quantity-1.1.0 {unit: !unit/unit-1.0.0 km s-1, value: 200.0}

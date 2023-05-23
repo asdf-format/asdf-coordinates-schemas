@@ -1,6 +1,6 @@
-id: asdf://asdf-format.org/astronomy/coordinates/manifests/coordinates-1.0.0
-extension_uri: asdf://asdf-format.org/astronomy/coordinates/extensions/coordinates-1.0.0
-title: Coordinates extension 1.0.0
+id: asdf://asdf-format.org/astronomy/coordinates/manifests/coordinates-1.1.0
+extension_uri: asdf://asdf-format.org/astronomy/coordinates/extensions/coordinates-1.1.0
+title: Coordinates extension 1.1.0
 description: |-
   A set of tags for serializing coordinates.
 tags:
