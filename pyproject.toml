@@ -34,7 +34,8 @@ docs = [
 ]
 test = [
     'pytest',
-    'asdf-astropy >= 0.2.0'
+    'asdf-astropy @ git+https://github.com/braingram/asdf-astropy.git@upstream_class_reorg'
+    # 'asdf-astropy >= 0.2.0'
 ]
 
 [project.urls]
