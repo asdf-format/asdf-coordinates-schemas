@@ -2,6 +2,7 @@
 ------------------
 
 - Add ``asdf-astropy`` as a test dependency. [#34]
+- Add ``Geodetic`` coordinate representation support. [#40]
 
 0.2.0 (2023-03-21)
 ------------------
