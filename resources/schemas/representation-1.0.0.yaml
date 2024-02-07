@@ -12,6 +12,7 @@ description: |
 examples:
   -
     - A SphericalRepresentation
+    - asdf-standard-1.5.0
     - |
         !<tag:astropy.org:astropy/coordinates/representation-1.0.0>
           components:
@@ -26,6 +27,7 @@ examples:
           type: SphericalRepresentation
   -
     - A CartesianDifferential
+    - asdf-standard-1.5.0
     - |
         !<tag:astropy.org:astropy/coordinates/representation-1.0.0>
           components:

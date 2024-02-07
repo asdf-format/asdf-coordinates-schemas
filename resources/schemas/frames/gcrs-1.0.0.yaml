@@ -9,6 +9,7 @@ title: |
 examples:
   -
     - A GCRS frame without data
+    - asdf-standard-1.5.0
     - |
         !<tag:astropy.org:astropy/coordinates/frames/gcrs-1.0.0>
             frame_attributes:
@@ -27,6 +28,7 @@ examples:
               obstime: !time/time-1.1.0 J2000.000
   -
     - A GCRS frame with data
+    - asdf-standard-1.5.0
     - |
         !<tag:astropy.org:astropy/coordinates/frames/gcrs-1.0.0>
           data: !<tag:astropy.org:astropy/coordinates/representation-1.0.0>
