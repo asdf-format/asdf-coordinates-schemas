@@ -3,6 +3,7 @@
 
 - Add ``asdf-astropy`` as a test dependency. [#34]
 - Drop official support for Python 3.8 [#42]
+- Update schemas for ASDF standard 1.6.0 [#55]
 
 0.2.0 (2023-03-21)
 ------------------
