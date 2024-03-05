@@ -18,6 +18,7 @@ classifiers = [
 ]
 dependencies = [
   'asdf >= 2.12.1',
+  'asdf-standard >= 1.1.0',
 ]
 dynamic = ['version']
 
