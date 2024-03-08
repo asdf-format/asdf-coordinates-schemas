@@ -9,6 +9,7 @@ title: |
 examples:
   -
     - A Galactocentric frame without data
+    - asdf-standard-1.5.0
     - |
         !<tag:astropy.org:astropy/coordinates/frames/galactocentric-1.0.0>
           frame_attributes:

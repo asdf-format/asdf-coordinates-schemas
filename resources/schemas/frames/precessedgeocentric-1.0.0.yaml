@@ -9,6 +9,7 @@ title: |
 examples:
   -
     - A PrecessedGeocentric frame without data
+    - asdf-standard-1.5.0
     - |
         !<tag:astropy.org:astropy/coordinates/frames/precessedgeocentric-1.0.0>
           frame_attributes:
@@ -28,6 +29,7 @@ examples:
             obstime: !time/time-1.1.0 J2000.000
   -
     - A PrecessedGeocentric frame with data
+    - asdf-standard-1.5.0
     - |
         !<tag:astropy.org:astropy/coordinates/frames/precessedgeocentric-1.0.0>
             data: !<tag:astropy.org:astropy/coordinates/representation-1.0.0>
