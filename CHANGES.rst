@@ -1,4 +1,9 @@
-0.3.0 (unreleased)
+0.4.0 (unreleased)
+------------------
+
+-
+
+0.3.0 (2024-03-09)
 ------------------
 
 - Add ``asdf-astropy`` as a test dependency. [#34]
