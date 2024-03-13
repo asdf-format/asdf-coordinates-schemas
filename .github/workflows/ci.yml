@@ -39,22 +39,22 @@ jobs:
             toxenv: py39
 
           - name: Twine check
-            python-version: 3.9
+            python-version: 3.11
             os: ubuntu-latest
             toxenv: twine
 
           - name: Code style checks
-            python-version: 3.9
+            python-version: 3.11
             os: ubuntu-latest
             toxenv: codestyle
 
           - name: macOS
-            python-version: 3.9
+            python-version: 3.11
             os: macos-latest
             toxenv: py39
 
           - name: Windows
-            python-version: 3.9
+            python-version: 3.11
             os: windows-latest
             toxenv: py39
 
@@ -90,10 +90,10 @@ jobs:
           repository: astropy/asdf-astropy
           ref: main
           path: asdf-astropy
-      - name: Set up Python 3.9
+      - name: Set up Python 3.11
         uses: actions/setup-python@v2
         with:
-          python-version: 3.9
+          python-version: 3.11
       - name: Install asdf-coordinates-schemas
         run: cd asdf-coordinates-schemas && pip install .
       - name: Install asdf-astropy
