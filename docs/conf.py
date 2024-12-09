@@ -100,6 +100,7 @@ html_theme_options = {
     "dark_logo": "images/logo-dark-mode.png",
 }
 
+pygments_style = "monokai"
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
