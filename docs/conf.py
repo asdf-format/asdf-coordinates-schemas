@@ -42,7 +42,7 @@ intersphinx_mapping["pytest"] = ("https://docs.pytest.org/en/latest/", None)  # 
 
 subprojects = {
     # main project
-    "asdf-website": ("https://www.asdf-website.org/en/latest", None),
+    "asdf-website": ("https://www.asdf-format.org/en/latest", None),
     # other subprojects
     "asdf": ("https://asdf.readthedocs.io/en/latest/", None),
     "asdf-standard": ("https://asdf-standard.readthedocs.io/en/latest/", None),
