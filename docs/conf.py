@@ -135,7 +135,7 @@ graphviz_dot_args = [
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [("index", project + ".tex", project + " Documentation", author, "manual")]
 
-latex_logo = "_static/images/logo-light.png"
+latex_logo = "_static/images/logo-light-mode.png"
 
 
 # -- Options for manual page output --------------------------------------------
