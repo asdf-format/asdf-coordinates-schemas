@@ -1,6 +1,7 @@
 """
 Test that the asdf library integration is working properly.
 """
+
 from pathlib import Path
 
 import asdf
