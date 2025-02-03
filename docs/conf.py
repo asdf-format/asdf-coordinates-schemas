@@ -45,7 +45,7 @@ subprojects = {
     # main project
     "asdf-website": ("https://www.asdf-format.org/en/latest", None),
     # other subprojects
-    "asdf": ("https://www.asdf-format.org/projects/asdf/en/latest/", None),
+    "asdf": ("https://www.asdf-format.org/projects/asdf/en/stable/", None),
     "asdf-standard": ("https://asdf-standard.readthedocs.io/en/latest/", None),
     "asdf-transform-schemas": ("https://www.asdf-format.org/projects/asdf-transform-schemas/en/latest/", None),
     "asdf-wcs-schemas": ("https://www.asdf-format.org/projects/asdf-wcs-schemas/en/latest/", None),
@@ -55,10 +55,9 @@ intersphinx_mapping.update(subprojects)  # noqa
 
 # Adds a global navigation in the topbar - consistent across subprojects
 globalnavlinks = {
-    "Projects": "https://www.asdf-format.org",
+    "ASDF Projects": "https://www.asdf-format.org",
     "Tutorials": "https://www.asdf-format.org/en/latest/tutorials/index.html",
     "Community": "https://www.asdf-format.org/en/latest/community/index.html",
-    "Installation": "https://www.asdf-format.org/en/latest/applications/index.html",
 }
 topbanner = ""
 for text, link in globalnavlinks.items():
@@ -94,7 +93,6 @@ rst_epilog += """"""  # noqa
 # a list of builtin themes. To override the custom theme, set this to the
 # name of a builtin theme or the name of a custom theme in html_theme_path.
 html_theme = "furo"
-html_theme_options = {}
 
 html_static_path = ["_static"]
 
