@@ -122,7 +122,7 @@ pygments_dark_style = "monokai"
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = f"{project.replace('_', ' ')} v{version}"
+html_title = f"{project.replace('_', ' ')} v{'.'.join(release.split('.')[:3])}"
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = project + "doc"
@@ -159,16 +159,13 @@ sys.path.insert(0, os.path.join(os.path.abspath(os.path.dirname("__file__")), "s
 extensions += ["sphinx_asdf", "sphinx.ext.intersphinx", "sphinx.ext.extlinks"]  # noqa
 
 
-def setup(app):
-    app.add_css_file("custom.css")
-
-
 # -- sphinx_asdf configuration ---------------------------------------------
 
 # Top-level directory containing ASDF schemas (relative to current directory)
 asdf_schema_path = "../resources"
 # This is the prefix common to all schema IDs in this repository
 asdf_schema_standard_prefix = "schemas"
+
 
 def setup(app):
     app.add_css_file("custom.css")
