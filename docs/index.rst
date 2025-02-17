@@ -42,10 +42,3 @@ Developer Resources
 
   contributing.rst
   changes.rst
-
-Index
-=====
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
