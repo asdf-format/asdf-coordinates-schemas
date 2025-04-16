@@ -1,7 +1,7 @@
 %YAML 1.1
 ---
 $schema: "http://stsci.edu/schemas/yaml-schema/draft-01"
-id: "http://astropy.org/schemas/astropy/coordinates/spectralcoord-1.1.0"
+id: "http://astropy.org/schemas/astropy/coordinates/spectralcoord-1.2.0"
 
 title: >
   Represents a SpectralCoord object from astropy
@@ -13,11 +13,13 @@ properties:
       A vector of one or more values
     anyOf:
       - type: number
-      - $ref: "http://stsci.edu/schemas/asdf/core/ndarray-1.1.0"
+      - tag: "tag:stsci.edu:asdf/core/ndarray-1.*"
   unit:
     description: |
       The unit corresponding to the values
-    $ref: "http://stsci.edu/schemas/asdf/unit/unit-1.0.0"
+    anyOf:
+      - tag: "tag:stsci.edu:asdf/unit/unit-1.*"
+      - tag: "tag:astropy.org:astropy/units/unit-1.*"
   observer:
     description: |
       The observer frame for this coordinate
