@@ -1,7 +1,7 @@
 %YAML 1.1
 ---
 $schema: "http://stsci.edu/schemas/yaml-schema/draft-01"
-id: "http://astropy.org/schemas/astropy/coordinates/frames/cirs-1.1.0"
+id: "http://astropy.org/schemas/astropy/coordinates/frames/cirs-1.2.0"
 
 title: |
   Represents a CIRS coordinate object from astropy
@@ -11,14 +11,14 @@ examples:
     - A CIRS frame without data
     - asdf-standard-1.6.0
     - |
-        !<tag:astropy.org:astropy/coordinates/frames/cirs-1.1.0>
+        !<tag:astropy.org:astropy/coordinates/frames/cirs-1.2.0>
           frame_attributes:
             obstime: !time/time-1.2.0 {scale: tai, value: B1950.000}
   -
     - A CIRS frame with data
     - asdf-standard-1.6.0
     - |
-        !<tag:astropy.org:astropy/coordinates/frames/cirs-1.1.0>
+        !<tag:astropy.org:astropy/coordinates/frames/cirs-1.2.0>
           data: !<tag:astropy.org:astropy/coordinates/representation-1.1.0>
             components:
               lat: !<tag:astropy.org:astropy/coordinates/latitude-1.1.0> {unit: !unit/unit-1.0.0 deg,
@@ -33,12 +33,12 @@ examples:
             obstime: !time/time-1.2.0 {scale: tai, value: B1950.000}
 
 allOf:
-  - $ref: baseframe-1.1.0
+  - $ref: baseframe-1.2.0
   - properties:
       frame_attributes:
         type: object
         properties:
           obstime:
-            $ref: "http://stsci.edu/schemas/asdf/time/time-1.2.0"
+            tag: "tag:stsci.edu:asdf/time/time-1.*"
         required: [obstime]
 ...
