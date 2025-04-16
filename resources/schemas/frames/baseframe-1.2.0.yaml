@@ -1,7 +1,7 @@
 %YAML 1.1
 ---
 $schema: "http://stsci.edu/schemas/yaml-schema/draft-01"
-id: "http://astropy.org/schemas/astropy/coordinates/frames/baseframe-1.1.0"
+id: "http://astropy.org/schemas/astropy/coordinates/frames/baseframe-1.2.0"
 
 title: |
   Represents a coordinate frame object from astropy
@@ -15,7 +15,7 @@ properties:
   data:
     description: |
       The representation object holding any data associated with the frame.
-    $ref: "../representation-1.1.0"
+    tag: "tag:astropy.org:astropy/coordinates/representation-1.*"
   frame_attributes:
     description: |
       Attributes on the coordinate frame.
