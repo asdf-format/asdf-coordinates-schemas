@@ -1,7 +1,7 @@
 %YAML 1.1
 ---
 $schema: "http://stsci.edu/schemas/yaml-schema/draft-01"
-id: "http://astropy.org/schemas/astropy/coordinates/frames/precessedgeocentric-1.1.0"
+id: "http://astropy.org/schemas/astropy/coordinates/frames/precessedgeocentric-1.2.0"
 
 title: |
   Represents a PrecessedGeocentric coordinate object from astropy
@@ -11,7 +11,7 @@ examples:
     - A PrecessedGeocentric frame without data
     - asdf-standard-1.6.0
     - |
-        !<tag:astropy.org:astropy/coordinates/frames/precessedgeocentric-1.1.0>
+        !<tag:astropy.org:astropy/coordinates/frames/precessedgeocentric-1.2.0>
           frame_attributes:
             equinox: !time/time-1.2.0 J2000.000
             obsgeoloc: !<tag:astropy.org:astropy/coordinates/representation-1.1.0>
@@ -31,7 +31,7 @@ examples:
     - A PrecessedGeocentric frame with data
     - asdf-standard-1.6.0
     - |
-        !<tag:astropy.org:astropy/coordinates/frames/precessedgeocentric-1.1.0>
+        !<tag:astropy.org:astropy/coordinates/frames/precessedgeocentric-1.2.0>
             data: !<tag:astropy.org:astropy/coordinates/representation-1.1.0>
               components:
                 lat: !<tag:astropy.org:astropy/coordinates/latitude-1.1.0> {unit: !unit/unit-1.0.0 deg,
@@ -59,17 +59,17 @@ examples:
               obstime: !time/time-1.2.0 J2000.000
 
 allOf:
-  - $ref: baseframe-1.1.0
+  - $ref: baseframe-1.2.0
   - properties:
       frame_attributes:
         type: object
         properties:
           equinox:
-            $ref: "http://stsci.edu/schemas/asdf/time/time-1.2.0"
+            tag: "tag:stsci.edu:asdf/time/time-1.*"
           obstime:
-            $ref: "http://stsci.edu/schemas/asdf/time/time-1.2.0"
+            tag: "tag:stsci.edu:asdf/time/time-1.*"
           obsgeoloc:
-            $ref: "../representation-1.1.0"
+            tag: "tag:astropy.org:astropy/coordinates/representation-1.*"
           obsgeovel:
-            $ref: "../representation-1.1.0"
+            tag: "tag:astropy.org:astropy/coordinates/representation-1.*"
 ...
