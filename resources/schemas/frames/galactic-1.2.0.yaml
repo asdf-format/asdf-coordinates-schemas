@@ -1,7 +1,7 @@
 %YAML 1.1
 ---
 $schema: "http://stsci.edu/schemas/yaml-schema/draft-01"
-id: "http://astropy.org/schemas/astropy/coordinates/frames/galactic-1.1.0"
+id: "http://astropy.org/schemas/astropy/coordinates/frames/galactic-1.2.0"
 
 title: |
   Represents an Galactic coordinate object from astropy.
@@ -11,7 +11,7 @@ examples:
     - An Galactic frame without data
     - asdf-standard-1.6.0
     - |
-         !<tag:astropy.org:astropy/coordinates/frames/galactic-1.1.0>
+         !<tag:astropy.org:astropy/coordinates/frames/galactic-1.2.0>
            frame_attributes: {}
   -
     - An Galactic frame with data
@@ -34,5 +34,5 @@ examples:
 
 
 allOf:
-  - $ref: baseframe-1.1.0
+  - $ref: baseframe-1.2.0
 ...
