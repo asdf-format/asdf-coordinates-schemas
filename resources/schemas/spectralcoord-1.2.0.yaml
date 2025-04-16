@@ -23,10 +23,10 @@ properties:
   observer:
     description: |
       The observer frame for this coordinate
-    $ref: "http://astropy.org/schemas/astropy/coordinates/frames/baseframe-1.1.0"
+    $ref: "http://astropy.org/schemas/astropy/coordinates/frames/baseframe-1.2.0"
   target:
     description: |
       The target frame for this coordinate
-    $ref: "http://astropy.org/schemas/astropy/coordinates/frames/baseframe-1.1.0"
+    $ref: "http://astropy.org/schemas/astropy/coordinates/frames/baseframe-1.2.0"
 required: [value, unit]
 ...
