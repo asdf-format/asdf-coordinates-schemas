@@ -4,6 +4,7 @@
 - Changes documentation configuration settings to make this consistent with other asdf-related projects [#61]
 - Fix typo in latex logo path [#62]
 - Adds global navigation in docs top bar [#63]
+- Update schemas to prefer tag over ref [#64]
 
 0.3.0 (2024-03-09)
 ------------------
