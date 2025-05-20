@@ -3,9 +3,14 @@ import os
 import sys
 from pathlib import Path
 
+try:
+    # Added in Python 3.11
+    import tomllib
+except ImportError
+    import tomli as tomllib
+
 # Ensure documentation examples are determinstically random.
 import numpy
-import tomli
 from pkg_resources import get_distribution
 
 try:
@@ -21,7 +26,7 @@ except ImportError:
 
 # Get configuration information from `pyproject.toml`
 with open(Path(__file__).parent.parent / "pyproject.toml", "rb") as configuration_file:
-    conf = tomli.load(configuration_file)
+    conf = tomllib.load(configuration_file)
 configuration = conf["project"]
 
 # -- General configuration ----------------------------------------------------
