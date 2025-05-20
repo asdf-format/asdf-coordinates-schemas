@@ -4,7 +4,6 @@ to schemas that exist.
 """
 
 import asdf
-import pytest
 import yaml
 
 
