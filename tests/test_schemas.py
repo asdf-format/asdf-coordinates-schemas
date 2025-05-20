@@ -2,10 +2,9 @@ import re
 
 import asdf
 
-import pytest
-
 ALLOWED_REFS = (
     r"^baseframe-[0-9.]+$",
+    r"^frames/baseframe-[0-9.]+$",
     r"^#.*$",
 )
 

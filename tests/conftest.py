@@ -1,9 +1,8 @@
 from pathlib import Path
 
+import asdf
 import pytest
 import yaml
-
-import asdf
 
 
 def get_latest_schema_uris(resource_paths):
@@ -35,6 +34,7 @@ LATEST_SCHEMA_URIS = get_latest_schema_uris(RESOURCE_PATHS)
 @pytest.fixture(params=RESOURCE_PATHS)
 def resource_path(request):
     yield request.param
+
 
 @pytest.fixture(params=SCHEMA_PATHS)
 def schema_path(request):
