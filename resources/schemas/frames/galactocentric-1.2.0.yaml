@@ -44,13 +44,19 @@ allOf:
           galacen_coord:
             tag: "tag:astropy.org:astropy/coordinates/frames/icrs-1.*"
           galcen_distance:
-            tag: "tag:stsci.edu:asdf/unit/quantity-1.*"
+            anyOf:
+              - tag: "tag:stsci.edu:asdf/unit/quantity-1.*"
+              - tag: "tag:astropy.org:astropy/units/quantity-1.*"
           galcen_v_sun:
             tag: "tag:astropy.org:astropy/coordinates/representation-1.*"
           z_sun:
-            tag: "tag:stsci.edu:asdf/unit/quantity-1.*"
+            anyOf:
+              - tag: "tag:stsci.edu:asdf/unit/quantity-1.*"
+              - tag: "tag:astropy.org:astropy/units/quantity-1.*"
           roll:
-            tag: "tag:stsci.edu:asdf/unit/quantity-1.*"
+            anyOf:
+              - tag: "tag:stsci.edu:asdf/unit/quantity-1.*"
+              - tag: "tag:astropy.org:astropy/units/quantity-1.*"
 
         required: [galcen_coord, galcen_distance, galcen_v_sun, z_sun, roll]
 ...

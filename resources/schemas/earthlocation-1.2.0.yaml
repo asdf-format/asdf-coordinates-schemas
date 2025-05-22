@@ -14,15 +14,21 @@ properties:
   x:
     description: |
       X component of location in geocentric representation
-    tag: "tag:stsci.edu:asdf/unit/quantity-1.*"
+    anyOf:
+      - tag: "tag:stsci.edu:asdf/unit/quantity-1.*"
+      - tag: "tag:astropy.org:astropy/units/quantity-1.*"
   y:
     description: |
       Y component of location in geocentric representation
-    tag: "tag:stsci.edu:asdf/unit/quantity-1.*"
+    anyOf:
+      - tag: "tag:stsci.edu:asdf/unit/quantity-1.*"
+      - tag: "tag:astropy.org:astropy/units/quantity-1.*"
   z:
     description: |
       Z component of location in geocentric representation
-    tag: "tag:stsci.edu:asdf/unit/quantity-1.*"
+    anyOf:
+      - tag: "tag:stsci.edu:asdf/unit/quantity-1.*"
+      - tag: "tag:astropy.org:astropy/units/quantity-1.*"
   ellipsoid:
     description: |
       Reference ellipsoid that is used when representing geodetic coordinates.

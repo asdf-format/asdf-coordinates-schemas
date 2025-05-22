@@ -5,6 +5,7 @@
 - Fix typo in latex logo path [#62]
 - Adds global navigation in docs top bar [#63]
 - Update schemas to prefer tag over ref [#64]
+- Use both asdf and astropy unit and quantity tags [#67]
 
 0.3.0 (2024-03-09)
 ------------------
