@@ -32,6 +32,7 @@ docs = [
 ]
 test = [
     'pytest',
+    'pytest-asdf-plugin',
     'asdf-astropy >= 0.2.0'
 ]
 
