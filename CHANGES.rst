@@ -2,6 +2,7 @@
 ------------------
 
 - Drop Python 3.9 support [#77]
+- Add TETE and TEME coordinate frames. [#78]
 
 0.4.0 (2025-05-27)
 ------------------
