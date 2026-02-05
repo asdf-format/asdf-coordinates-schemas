@@ -1,3 +1,8 @@
+0.5.1 (2026-02-05)
+------------------
+
+- Fix examples (supply ``location`` attribute) in TETE frame schema. [#80]
+
 0.5.0 (2026-02-03)
 ------------------
 
